@@ -55,12 +55,11 @@
   }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width:960px) {
     .container {
       /* display:flex;
       flex-wrap: wrap;
       flex-direction:row; */
-      max-width:960px;
     }
     
     .box {
@@ -69,25 +68,26 @@
       background: #d9d9d9;
       padding: 4%;
     }
-
+    
     #box-a {
-      height: 100px;
-      width:100vw;
+      width:95vw;
+      /* max-width:960px; */
     }
-  
-    /* #box-b {
-      height: 150px;
+
+    #box-b {
+      height:66.6vh;
+      width:17.5vw;
     }
   
     #box-c, #box-d {
-      height: 125px;
+      height:
+      width:29.09vw;
     }
   
     #box-e, #box-f, #box-g, #box-h {
-      height: 250px;
+      width:11.52vw;
     }
   
     #box-i {
-      height: 80px;
-    } */
+    }
   }
