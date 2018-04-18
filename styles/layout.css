@@ -1,6 +1,7 @@
 .box {
   float:left;
   position:relative;
+  border:.5px solid #000;
 }
 
 #box-a {
@@ -39,7 +40,7 @@
   background:#a1d2fc;
 }
 
-@media screen and (min-width: 480px) and (max-width:768px) {
+@media screen and (max-width:768px) {
   /* total height: 1055px, total width: 480px */
   .box {
     width:100vw; 
@@ -75,30 +76,34 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width:960px) {
+@media screen and (min-width: 768px) {
+  body {
+    width: 960px;
+  }
+
   #box-a {
     height:14.28vh;
-    width:100vw;
+    width:100%;
   }
 
   #box-b {
     height:85.72vh;
-    width:20.83vw;
+    width:20.83%;
   }
   
     
   #box-c, #box-d {
     height:28.57vh;
-    width:39.585vw;
+    width:39.585%;
   }
 
   #box-e, #box-f, #box-g, #box-h {
-    width:19.7925vw;
+    width:19.7925%;
     height:35.71vh;
   }
   
   #box-i {
     height:21.42vh;
-    width:79.17vw;
+    width:79.17%;
   }
 }
