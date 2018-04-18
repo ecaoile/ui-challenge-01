@@ -3,14 +3,6 @@
   position:relative;
 }
 
-.center-text {
-  position:absolute;
-  font-size:1.5em;
-  font-weight:bold;
-  top:50%;
-  left:50%;
-}
-
 #box-a {
   background:#c9ccff;
 }
@@ -45,4 +37,68 @@
 
 #box-i {
   background:#a1d2fc;
+}
+
+@media screen and (min-width: 480px) and (max-width:768px) {
+  /* total height: 1055px, total width: 480px */
+  .box {
+    width:100vw; 
+  }
+
+  .box:nth-child(n+5):nth-child(-n+8) {
+    width:50%;
+  }
+
+  #box-a {
+    /* height:7.2vh; */
+    height:75px;
+  }
+  
+  #box-b {
+    /* height:14.4vh; */
+    height:150px;
+  }
+
+  #box-c, #box-d {
+  /* height:11.8vh; */
+  height:125px;
+  }
+
+  #box-e, #box-f, #box-g, #box-h {
+    /* height: 23.6vh; */
+    height:250px;
+  }
+
+  #box-i {
+    /* height: 7.58vh; */
+    height:80px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:960px) {
+  #box-a {
+    height:14.28vh;
+    width:100vw;
+  }
+
+  #box-b {
+    height:85.72vh;
+    width:20.83vw;
+  }
+  
+    
+  #box-c, #box-d {
+    height:28.57vh;
+    width:39.585vw;
+  }
+
+  #box-e, #box-f, #box-g, #box-h {
+    width:19.7925vw;
+    height:35.71vh;
+  }
+  
+  #box-i {
+    height:21.42vh;
+    width:79.17vw;
+  }
 }
