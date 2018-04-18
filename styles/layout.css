@@ -1,6 +1,7 @@
 .box {
   float:left;
   position:relative;
+  border:.5px solid #000;
 }
 
 #box-a {
