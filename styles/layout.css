@@ -1,93 +1,104 @@
+.box {
+  float:left;
+  position:relative;
+}
+
+#box-a {
+  background:#c9ccff;
+}
+
+#box-b {
+  background:#b7ffa3;
+}
+
+#box-c {
+  background:#ffdc9b;
+}
+
+#box-d {
+  background:#fc99ad;
+}
+
+#box-e {
+  background:#c399fc;
+}
+
+#box-f {
+  background:#99fcf7;
+}
+
+#box-g {
+  background:#44ff8c;
+}
+
+#box-h {
+  background:#ffd53d
+}
+
+#box-i {
+  background:#a1d2fc;
+}
 
 @media screen and (min-width: 480px) and (max-width:768px) {
-  .container {
-    display:block;
-    /* display:flex;
-    flex-wrap: nowrap;
-    flex-direction:column;
-    width:100%; */
-  }
-  
+  /* total height: 1055px, total width: 480px */
   .box {
-    border: .5px solid;
-    background: #d9d9d9;
-    padding: 4%;
-    width:100%;
-
+    width:100vw; 
   }
-
-  /* .flex-row-container {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    display:flex;
-  } */
 
   .box:nth-child(n+5):nth-child(-n+8) {
-  /* flex-direction: row;
-    flex-wrap: nowrap; */
-    float:left;
-    width:41.8%;
-    }
-  .box:nth-child(9) {
-      float:left;
-      }
-  #box-a {
-    height: 75px;
-    /* height:10%; */
-
+    width:50%;
   }
 
+  #box-a {
+    /* height:7.2vh; */
+    height:75px;
+  }
+  
   #box-b {
-    /* height: 20%; */
+    /* height:14.4vh; */
     height:150px;
   }
 
   #box-c, #box-d {
-    height: 125px;
+  /* height:11.8vh; */
+  height:125px;
   }
 
   #box-e, #box-f, #box-g, #box-h {
-    height: 250px;
+    /* height: 23.6vh; */
+    height:250px;
   }
 
   #box-i {
-    height: 80px;
+    /* height: 7.58vh; */
+    height:80px;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width:960px) {
+  #box-a {
+    height:14.28vh;
+    width:100vw;
   }
 
-  @media screen and (min-width: 768px) and (max-width:960px) {
-    .container {
-      /* display:flex;
-      flex-wrap: wrap;
-      flex-direction:row; */
-    }
-    
-    .box {
-      border: .5px solid;
-      float:left;
-      background: #d9d9d9;
-      padding: 4%;
-    }
-    
-    #box-a {
-      width:95vw;
-      /* max-width:960px; */
-    }
-
-    #box-b {
-      height:66.6vh;
-      width:17.5vw;
-    }
-  
-    #box-c, #box-d {
-      height:
-      width:29.09vw;
-    }
-  
-    #box-e, #box-f, #box-g, #box-h {
-      width:11.52vw;
-    }
-  
-    #box-i {
-    }
+  #box-b {
+    height:85.72vh;
+    width:20.83vw;
   }
+  
+    
+  #box-c, #box-d {
+    height:28.57vh;
+    width:39.585vw;
+  }
+
+  #box-e, #box-f, #box-g, #box-h {
+    width:19.7925vw;
+    height:35.71vh;
+  }
+  
+  #box-i {
+    height:21.42vh;
+    width:79.17vw;
+  }
+}
